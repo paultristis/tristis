@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRISTIS</title>
+    <meta name="description" content="Architecture + Design">
+    <title>Tristis</title>
     <style>
-        /* Set the font for the title */
         h1 {
-            font-family: 'Garamond', serif; /* Change to your preferred font */
-            font-size: 36px; /* Adjust the size */
-            color: #333; /* Change the color */
-            text-align: left; /* Center-align the title */
+            font-family: 'Arial', sans-serif; 
+            font-size: 20px; 
+            font-weight: normal;
+            color: #333; 
+            text-align: left; 
+            margin-left: 10%;
+            
         }
 
-        /* Center the content on the page */
+        /* full-page container*/
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Full viewport height */
-            margin: 0; /* Remove default margins */
-            font-family: 'Garamond', serif; /* Default font for the page */
+            justify-content: flex-start;
+            align-items: left;
+            height: 100vh; 
+            font-family: 'Arial', sans-serif; 
+            position: relative;
+            margin: 5%;
         }
 
-        /* Style the image */
         img {
-            max-width: 80%; /* Make the image responsive */
-            height: auto; /* Maintain aspect ratio */
-            margin-top: 20px; /* Add space between title and image */
+            max-width: 80%; 
+            height: auto; 
+            margin-top: 15px;
+            margin-left: 10%;
         }
+
+        .pg {
+            position: absolute;
+            left: 15%;
+            font-family:'Arial', sans-serif;
+            font-size: 18px;
+            color: #333;
+        }
+        
     </style>
 </head>
 <body>
-    <h1>ARCHITECTURE</h1>
+    <h1 class="splash-header">
+            TRISTIS
+    </h1>
     <img src="lemuria.jpg" alt="Tristis">
+    <div class="pg"> </div>
+    
 </body>
-</html><!DOCTYPE html>
+</html>
