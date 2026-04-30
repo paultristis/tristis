@@ -52,8 +52,8 @@
             const el = document.getElementById("counter");
 
             function update() {
-                count++;
-                el.textContent = count;
+                count+= 12;
+                el.textContent = count.toLocaleString();
                 requestAnimationFrame(update);
             }
 
