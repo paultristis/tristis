@@ -44,10 +44,20 @@
         
     </style>
 </head>
-<body>
-    <h1>
-            TRISTIS
-    </h1>
-    <img src="lemuria.jpg" alt="Tristis">    
-</body>
+    <body>
+        <h1 id="counter">0</h1>
+        <img src="lemuria.jpg" alt="Tristis">   
+        <script>
+            let count = 0;
+            const el = document.getElementById("counter");
+
+            function update() {
+                count++;
+                el.textContent = count;
+                requestAnimationFrame(update);
+            }
+
+            update();
+        </script> 
+    </body>
 </html>
